@@ -40,3 +40,6 @@ def send():
     url = baseUrl + str(quote(content))
     r = requests.get(url)
     return "<img src='https://http.cat/200' /><br /><a href='/'>Back to Home</a>", 200
+
+if __name__ == "__main__":
+    app.run()
