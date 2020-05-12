@@ -1,3 +1,4 @@
 venv
 secret
 __pycache__
+telegramify/config.py

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<fieldset>
+    <legend>Telegramify</legend>
+    <form action="/send" method="POST" id="TForm" style="display: flex;">
+        <input type="password" name="password" placeholder="password" style="width: 100%;" />
+        <input type="submit" value="Send" />
+    </form>
+    <textarea form="TForm" name="content" placeholder="Content..."></textarea>
+</fieldset>
+
+{% endblock %}

@@ -1,0 +1,7 @@
+import uuid
+
+secret_key = uuid.uuid4().bytes
+
+TG_BOT_TOKEN = ""
+TG_USER_ID = ""
+HASHED_PASSWORD = ""

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<fieldset>
+    <legend>{{ legend }}</legend>
+    <img src="https://http.cat/{{ code }}" />
+    <a href="{{ url_for('index') }}">Back to index</a>
+</fieldset>
+
+{% endblock %}
