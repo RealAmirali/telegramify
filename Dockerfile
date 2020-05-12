@@ -1,4 +1,4 @@
-FROM tiangolo/uwsgi-nginx-flask
+FROM tiangolo/uwsgi-nginx-flask:python3.8-alpine
 
 RUN pip install requests
 
