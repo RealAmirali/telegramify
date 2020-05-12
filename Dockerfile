@@ -2,6 +2,6 @@ FROM tiangolo/uwsgi-nginx-flask:python3.8-alpine
 
 RUN pip install requests
 
-COPY telegramify/* /app/
+COPY telegramify/ /app/
 
-EXPOSE 80:80
+EXPOSE 80
