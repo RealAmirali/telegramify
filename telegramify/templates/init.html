@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<fieldset>
+    <legend>Initialize Setup</legend>
+    
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul >
+                {% for message in messages %}
+                <li><mark style="background-color: {{color}}">{{ message }}</mark></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %} 
+    <form action="/init" method="POST" id="form">
+        <input type="text" name="BotToken" placeholder="BotToken" style="width: 100%;" /><br />
+        <input type="text" name="UserID" placeholder="UserID" style="width: 100%;" /><br />
+        <input type="text" name="Password" placeholder="Password" style="width: 100%;" /><br />
+        <input type="submit" value="Submit" style="width: 100%;"/>
+    </form>
+</fieldset>
+
+{% endblock %}

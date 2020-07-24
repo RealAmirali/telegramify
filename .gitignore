@@ -3,3 +3,4 @@ secret
 __pycache__
 telegramify/config.py
 .fandogh
+config.toml

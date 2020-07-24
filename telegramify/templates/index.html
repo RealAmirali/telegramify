@@ -4,11 +4,11 @@
 
 <fieldset>
     <legend>Telegramify</legend>
-    <form action="/send" method="POST" id="TForm" style="display: flex;">
+    <form action="/send" method="POST" id="TForm">
         <input type="password" name="password" placeholder="password" style="width: 100%;" />
-        <input type="submit" value="Send" />
+        <textarea form="TForm" name="content" placeholder="Content..." style="height: 40%;" ></textarea>
+        <input type="submit" value="Send" style="width: 100%;" />
     </form>
-    <textarea form="TForm" name="content" placeholder="Content..."></textarea>
 </fieldset>
 
 {% endblock %}
